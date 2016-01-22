@@ -1,0 +1,15 @@
+body {
+	background-color: #77B4D9;
+}
+
+table {
+	margin-top: 50px;
+}
+
+tr.strikeout td:before {
+  content: " ";
+  color: green;
+  left: 0;
+  border-bottom: 1px solid #111;
+  width: 100%;
+}

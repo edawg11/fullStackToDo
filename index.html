@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row" id="header">
+			<div class="col-sm-12">
+				<h1>Enter A Task</h1>
+			</div>
+		</div>
+
+		<div class="row" id="inputRow">
+			<div id="inputCol"class="col-sm-4">
+				<input id="taskInput"type="text">
+			</div>
+			<div class="col-sm-4">
+				<input id="dateInput" type="date">
+			</div>
+			<div class="col-sm-4">
+				<button id="addButton" type="button" class="btn btn-success">Add</button>
+			</div>
+		</div>
+		
+		<table id = "table" class="table table-hover">
+			<thead>
+				<tr>
+					<th>Task</th>
+					<th>Due By</th>
+					<th>Complete?</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tbody id="toDoList">
+					<tr id="template">
+						<td class="desc"></td>
+						<td class="dueDate"></td>
+						<td <input class="checkBox" type="checkBox"></td></td>
+					</tr>
+			</tbody>
+		</table>
+
+	</div>
+
+
+
+	<script src='https://code.jquery.com/jquery-2.2.0.min.js'></script>
+	<script src=>"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.1/moment.js"></script>
+	<script src="main.js"></script>
